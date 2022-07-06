@@ -1,3 +1,9 @@
+* {
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   font-family: "Nunito", sans-serif;
 }
@@ -16,4 +22,18 @@ html {
 
 .h2 {
   font-size: 4rem;
+}
+
+.button {
+  background-color: orange;
+  border-radius: 0 30px 30px 30px;
+  color: white;
+  border: 1px solid orangered;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.button:hover {
+  background: transparent;
+  color: orange;
 }
