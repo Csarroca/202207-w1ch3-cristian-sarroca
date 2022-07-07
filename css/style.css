@@ -1,41 +1,118 @@
-* {
-  box-sizing: content-box;
-  margin: 0;
-  padding: 0;
+:root {
+  --main-color: #ed6436;
+  --main-text-color: #030;
 }
 
+* {
+  box-sizing: content-box;
+}
+
+body {
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 html {
+  font-family: "Nunito", sans-serif;
+  color: var(--main-text-color);
+}
+button {
   font-family: "Nunito", sans-serif;
 }
 
-.titles {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.h1 {
-  color: orange;
-  font-size: 1rem;
-}
-
-.h2 {
-  font-size: 4rem;
-}
-
 .button {
-  background-color: orange;
+  border: 2px solid var(--main-color);
   border-radius: 0 30px 30px 30px;
-  color: white;
-  border: 1px solid orangered;
-  padding: 20px;
-  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.button--big {
+  padding: 0.5rem 1rem;
+}
+.button--small {
+  padding: 0.2rem 0.5rem;
 }
 
-.button:hover {
+.button--solid {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.button--solid:hover {
   background: transparent;
-  color: orange;
+  color: var(--main-color);
+}
+
+.button--transparent:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.main-content {
+  margin: 0 50px;
+}
+
+@media (min-width: 900px) {
+  .main-content {
+    margin: 0 auto;
+    width: 800px;
+  }
+}
+.activities-list__header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .activities-list__header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.activities-list__button-wrapper {
+  text-align: center;
+  align-self: flex-end;
+}
+@media (min-width: 900px) {
+  .activities-list__button-wrapper {
+    align-self: flex-end;
+  }
+}
+
+.activities-list__title {
+  color: var(--main-color);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 900px) {
+  .activities-list__title {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+}
+
+.activities-list__subtitle {
+  font-size: 2.5 rem;
+  margin-top: 20px;
+  color: var(--main-text-color);
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .activities-list__subtitle {
+    font-size: 3.5rem;
+    text-align: left;
+  }
 }
 
 .fotos {
