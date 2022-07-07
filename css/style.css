@@ -10,7 +10,14 @@
 body {
   margin: 0;
 }
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 html {
   font-family: "Nunito", sans-serif;
 }
@@ -30,8 +37,23 @@ html {
   margin-top: 20px;
 }
 
-.h2 {
-  font-size: 4rem;
+@media (min-width: 900px) {
+  .main-title {
+    font-size: 1.4rem;
+    text-align: left;
+  }
+}
+
+.subtitle {
+  font-size: 2.5 rem;
+  margin-top: 20px;
+  color: var(--main-text-color);
+}
+@media (min-width: 900px) {
+  .subtitle {
+    font-size: 3.5rem;
+    text-align: left;
+  }
 }
 
 .button {
