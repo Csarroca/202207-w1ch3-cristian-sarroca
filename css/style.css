@@ -20,6 +20,7 @@ h6 {
 }
 html {
   font-family: "Nunito", sans-serif;
+  color: var(--main-text-color);
 }
 button {
   font-family: "Nunito", sans-serif;
@@ -28,7 +29,7 @@ button {
 .button {
   border: 2px solid var(--main-color);
   border-radius: 0 30px 30px 30px;
-  text-transform: upper;
+  text-transform: uppercase;
   font-weight: bold;
   transition: background-color 0.2s;
   cursor: pointer;
@@ -52,7 +53,40 @@ button {
 
 .button--transparent:hover {
   background-color: var(--main-color);
+  color: white;
 }
+
+.main-content {
+  margin: 0 50px;
+}
+
+@media (min-width: 900px) {
+  .main-content {
+    margin: 0 auto;
+    width: 800px;
+  }
+}
+.activities-list__header {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .activities-list__header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.activities-list__button-wrapper {
+  text-align: center;
+  align-self: flex-end;
+}
+@media (min-width: 900px) {
+  .activities-list__button-wrapper {
+    align-self: flex-end;
+  }
+}
+
 .activities-list__title {
   color: var(--main-color);
   font-size: 1.2rem;
@@ -62,7 +96,7 @@ button {
 }
 
 @media (min-width: 900px) {
-  .main-title {
+  .activities-list__title {
     font-size: 1.4rem;
     text-align: left;
   }
@@ -78,16 +112,6 @@ button {
   .activities-list__subtitle {
     font-size: 3.5rem;
     text-align: left;
-  }
-}
-.main-content {
-  margin: 0 50px;
-}
-
-@media (min-width: 900px) {
-  .main-content {
-    margin: 0 auto;
-    width: 800px;
   }
 }
 
