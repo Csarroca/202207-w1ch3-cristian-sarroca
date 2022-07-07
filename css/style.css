@@ -37,3 +37,7 @@ html {
   background: transparent;
   color: orange;
 }
+
+.fotos {
+  display: flex;
+}
