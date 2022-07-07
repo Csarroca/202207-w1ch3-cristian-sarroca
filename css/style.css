@@ -22,9 +22,12 @@ html {
   justify-content: center;
 }
 
-.h1 {
-  color: orange;
-  font-size: 1rem;
+.main-title {
+  color: var(--main-color);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .h2 {
