@@ -56,17 +56,30 @@ button {
 .button {
   border: 2px solid var(--main-color);
   border-radius: 0 30px 30px 30px;
-  text-transform: uppercase;
+  text-transform: upper;
+  font-weight: bold;
+  transition: background-color 0.2s;
+  cursor: pointer;
 }
 .button--big {
   padding: 0.5rem 1rem;
 }
-.button--solid {
-  background-color: var(--main-text-color);
+.button--small {
+  padding: 0.2rem 0.5rem;
 }
-.button:hover {
+
+.button--solid {
+  background-color: var(--main-color);
+  color: white;
+}
+
+.button--solid:hover {
   background: transparent;
-  color: orange;
+  color: var(--main-color);
+}
+
+.button--transparent:hover {
+  background-color: var(--main-color);
 }
 
 .fotos {
